@@ -2,11 +2,110 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <div class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Full stack portfolio</p>
+          <h1>
+            Building modern digital experiences with <span>React</span>, <span>Node</span>, and <span>Supabase</span>
+          </h1>
+          <p class="hero-text">
+            I design and develop fast, polished websites and apps that help brands grow online. My work combines clean UI, strong performance, and the power of modern cloud databases.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero-image"></div>
+      </section>
+
+      <section id="about" class="about-copy">
+        <div class="section-heading">
+          <div>
+            <h2>About me</h2>
+            <p>React developer focused on web apps, APIs, and delightful interfaces.</p>
+          </div>
+        </div>
+        <p>
+          I build responsive and accessible frontends with React, then connect them to reliable backends using Node and Supabase. My portfolio is designed to show meaningful projects with clear design, seamless interactions, and modern tooling.
+        </p>
+      </section>
+
+      <section id="skills" class="skills-grid">
+        <div class="skill-pill">React</div>
+        <div class="skill-pill">Node.js</div>
+        <div class="skill-pill">Supabase</div>
+        <div class="skill-pill">Vite</div>
+        <div class="skill-pill">Express</div>
+        <div class="skill-pill">JavaScript</div>
+      </section>
+
+      <section id="projects">
+        <div class="section-heading">
+          <div>
+            <h2>Featured projects</h2>
+            <p>Examples of work that combine code, design, and product thinking.</p>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Portfolio landing page</h3>
+            <p>A fast, clean marketing site built with responsive layout and modern UI components.</p>
+            <a href="#contact">View details</a>
+          </article>
+          <article class="project-card">
+            <h3>Backend contact API</h3>
+            <p>Secure form submission with Node, Express, and Supabase storage for real-world deployment.</p>
+            <a href="#contact">View details</a>
+          </article>
+          <article class="project-card">
+            <h3>Project dashboard</h3>
+            <p>Web app prototype showing data-driven UI patterns and reusable React components.</p>
+            <a href="#contact">View details</a>
+          </article>
+          <article class="project-card">
+            <h3>Interactive experience</h3>
+            <p>A modern frontend experience with subtle motion, clean spacing, and strong typography.</p>
+            <a href="#contact">View details</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-card">
+        <div class="section-heading">
+          <div>
+            <h2>Let’s work together</h2>
+            <p>Reach out if you want a polished website, web app, or Supabase-backed project.</p>
+          </div>
+        </div>
+        <form>
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="Your email" />
+          </label>
+          <label>
+            Message
+            <textarea placeholder="What would you like to build?"></textarea>
+          </label>
+          <button class="btn">Send message</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>Designed with React, Node, and Supabase in mind.</p>
+      </footer>
+    </div>
   </body>
 </html>
