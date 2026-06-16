@@ -235,19 +235,26 @@ a {
 .logo-react { background: #61DAFB; }
 .logo-node { background: #339933; }
 .logo-supabase { background: #3ECF8E; }
-.logo-vite { background: #646CFF; }
-.logo-express { background: #000000; }
+.logo-git { background: #F05032; }
+.logo-css { background: #1572B6; }
 .logo-javascript { background: #F7DF1E; }
 
 /* JavaScript icon should remain dark on yellow */
+.logo-javascript {
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+}
 .logo-javascript img {
   filter: none;
   width: 30px;
   height: 30px;
 }
 
-/* Improve contrast for express (black background): make icon white */
-.logo-express img { filter: brightness(0) invert(1); }
+/* Improve contrast for darker backgrounds */
+.logo-git img,
+.logo-css img {
+  filter: brightness(0) invert(1);
+}
 
 .skill-logo:hover {
   transform: translateY(-4px) scale(1.04);
@@ -305,6 +312,7 @@ a {
   margin: 0;
   max-width: 68ch;
   color: #334155;
+  text-align: justify;
 }
 
 @media (max-width: 640px) {
