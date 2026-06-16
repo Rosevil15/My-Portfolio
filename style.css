@@ -380,9 +380,28 @@ a {
 }
 
 footer {
-  text-align: center;
   margin: 4rem 0 0;
   color: #64748b;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #4338ca;
+  font-weight: 600;
 }
 
 @media (max-width: 840px) {
